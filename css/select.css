@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.divtable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    max-width: 1600px;
+    width: 100%;
+    background: linear-gradient(25deg ,#068fa1, #f7ff5c);
+    padding: 5vh;
+    border-radius: 10%;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.container h2{
+    padding: 2rem 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.tbl{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbl thead{
+    background: #424949;
+    color: #fff;
+}
+.tbl thead tr th{
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    vertical-align: top;
+    border: 1px solid #aab7b8;
+}
+.tbl tbody tr td{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #aab7b8;
+    padding: 0.8rem;
+}
+.tbl tr:nth-child(even){
+    background: #25e5f3;
+}
+.tbl tr:hover td{
+    background: #9f9f9f;
+    color: white;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.tbl .btn{
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
+    padding: 0.4rem;
+    border-radius: 1px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn_trash{
+    background: #e74c3c;
+    color: #fff;
+}
+.btn_edit{
+    background: #1e8449;
+    color: #fff;
+}
+@media (max-width:1400px) {
+    .tbl thead{
+        display: none;
+    }
+    .tbl tr,
+    .tbl td{
+        display: block;
+        width: 100%;
+    }
+    .tbl tr{
+        margin-bottom: 1rem;
+    }
+    .tbl tbody tr td{
+        text-align: right;
+        position: relative;
+    }
+    .tbl td::before{
+        content: attr(data-lable) !important;
+        position: absolute !important;
+        left: 0 !important;
+        width: 50% !important;
+        text-align: left !important;
+        padding-left: 1.2rem !important;
+    }
+    .tbl tbody tr td{
+        font-size: 0.8rem;
+    }
+}
+.sair{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+
+}
+.btnvoltar{
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: aqua;
+    height: 30px;
+}

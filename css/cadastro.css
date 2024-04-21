@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+		background-color: black;
+}
+.wrapper{
+	width: 750px;
+	background: rgba(255, 255, 255, .1);
+	border-radius: 10px;
+	border: 2px solid rgba(255, 255, 255, .2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	color: #fff;
+	backdrop-filter: blur(50px);
+	padding: 40px 35px 55px;
+	margin: 0 10px;
+}
+.wrapper h1{
+	font-size: 36px;
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+.wrapper .input-box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.input-box .input-field{
+	position: relative;
+	width: 48%;
+	height: 50px;
+	margin: 13px 0;
+}
+.input-box .input-field input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 2px solid rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: none;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 6px;
+	padding: 15px 15px 15px 40px;
+}
+p{
+	color: #333;
+}
+.input-box .input-field input::placeholder{
+	color: #ffffff;
+}
+.input-box .input-field i{
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	color: #333;
+}
+.wrapper .btn{
+	width: 100%;
+	height: 45px;
+	background: #fffc9c;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloque o vídeo atrás de tudo */
+}
+.wrapper .btn:hover{
+    scale: 1.02;
+    color: white;
+    background-color: #7b7b7b;
+}
+@media (max-width:576px) {
+	.input-box .input-field{
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+.wrapper .log{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 12px;
+    background-color: transparent;
+    border: 2px solid rgb(118, 118, 118);
+    border-radius: 8px;
+    color: #000000;
+}
+.wrapper .log:hover{
+    color: #fff;
+    scale: 1.02;
+    background: rgb(118, 118, 118);
+}

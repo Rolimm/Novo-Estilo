@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;800;900&display=swap');
+body {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.espaco{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.containerloja {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.containerloja form {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgb(82, 74, 235);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerloja input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.containerloja form i {
+    padding-left: 10px;
+}
+
+.product-list {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+.product:hover{
+    scale: 1.05;
+}
+
+/* Defina uma largura máxima para as imagens */
+.product img {
+    max-width: 70%; /* Isso manterá a proporção da imagem */
+    height: auto;
+    border-radius: 20px;
+}
+
+.product .p-details {
+    padding-left: 15px;
+}
+
+.product .p-details h2 {
+    color: #111;
+    font-size: 1.25em;
+
+    margin-bottom: 30px;
+}
+
+.product .p-details h3 {
+    font-size: 1em;
+}
+
+/* Estilos para telas menores (por exemplo, smartphones) */
+@media screen and (max-width: 768px) {
+    .containerloja {
+        width: 90%;
+    }
+
+    .containerloja form {
+        width: 100%;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}

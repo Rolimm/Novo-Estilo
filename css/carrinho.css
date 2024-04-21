@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root{
+    --color-table-header:#22f468;
+    --color-table-header-font:#000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+h1{
+    background: var(--color-table-header);
+    width: 100%;
+    height: 25px;
+    font-size: 15pt;
+    text-align: center;
+    color: var(--color-table-header-font);
+}
+.comprarbotao{
+    background: #0051ff;
+    color: #fff;
+    border-radius: 20%;
+    padding: 10px;
+    text-decoration: none;
+}
+.comprarbotao:hover{
+        background-color: #3f4553;
+
+    scale: 1.03;
+}
+.camposcarrinho{
+    background: #80eaf8;
+    font-size: 15px;
+    height: 30px;
+}
+.campos2carrinho{
+    background: #5660cd;
+    color: #fff;
+    font-size: 18px;
+    height: 30px;
+}
+.campos3carrinho{
+    background: #d900ff;
+    color: #fff;
+    font-size: 18px;
+    height: 30px;
+}
+.campos4carrinho{
+    background: #ff7b00;
+    color: #fff;
+    font-size: 18px;
+    height: 30px;
+}
+.botaocarrinho{
+    text-align: center;
+    background-color: rgb(243, 46, 46);
+    height: 30px;
+}
+.botaocarrinho a{
+    text-decoration: none;
+    color: #fff;
+}
+.formadepagamentocarrinho{
+    background: #75f667;
+    height: 5vh;
+}
+.botaofinalizar{
+    background-color: #0051ff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.botaofinalizar:hover{
+    background-color: #3f4553;
+    scale: 1.03;
+} 
+.headform{
+    background:#91aee6 ;
+    height: 3vh;
+    color: #fff;
+}
+select{
+    width: auto !important;
+    background-color: #ff0044d3;
+    padding: 5px;
+    color: white;
+}
+select option{
+    background-color: #ff0044d3;
+    color: white;
+}
+
+
+
+
+.carrinho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+}
+
+.produtoscarrinho {
+    flex-basis: calc(25% - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: auto; /* Remova a altura fixa */
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: calc(14% - 16px); /* Defina a largura máxima dos cartões */
+}
+@media (max-width:1200px) {
+    .produtoscarrinho {
+        flex-basis: calc(33% - 16px);
+        max-width: calc(33% - 16px); /* Defina a largura máxima dos cartões */
+    }
+}
+@media (max-width:1000px) {
+    .produtoscarrinho {
+        flex-basis: calc(50% - 16px);
+        max-width: calc(50% - 16px); /* Defina a largura máxima dos cartões */
+    }
+}
+
+.produtoscarrinho .title {
+    font-size: 1.2rem !important;
+}
+
+.produtoscarrinho img {
+    max-width: 100% !important; /* A imagem ainda se ajustará ao tamanho do card */
+    height: auto !important; /* Deixe a altura da imagem se ajustar automaticamente */
+    border-radius: 20px !important;
+}
+
+.produtoscarrinho a {
+    width: 50% !important;
+    padding: 5px !important;
+    text-decoration: none !important;
+    background-color: red !important;
+    color: white !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+}
